@@ -12,9 +12,6 @@ body{
 	text-shadow:0 0 3px rgba(0,0,0,.5);
 }
 
-a{color:#fff;}
-p{font-size:.7em; margin:0; padding:.5em 0 0;}
-
 /* Active Media Query Styles
 ------------------------------------------*/
 head {font-family:"XS";}
