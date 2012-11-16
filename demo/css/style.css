@@ -1,0 +1,49 @@
+/* Base Styles
+------------------------------------------*/
+html{
+	font-size: 100%;
+}
+
+body{
+	color:#fff;
+	font:1.5em/1.2 Arial, Helvetica, sans-serif;
+	padding:1em 0 0;
+	text-align:center;
+	text-shadow:0 0 3px rgba(0,0,0,.5);
+}
+
+a{color:#fff;}
+p{font-size:.7em; margin:0; padding:.5em 0 0;}
+
+/* Active Media Query Styles
+------------------------------------------*/
+head {font-family:"XS";}
+body:after{ content:"XS"; display:none;}
+
+/* Custom Styles for this breakpoint */
+body{background:#527d87;}
+
+
+@media screen and (min-width: 450px) {
+	head { font-family:"S";}
+	body:after{content:"S";}
+
+	/* Custom Styles for this breakpoint */
+	body{background:#296b73;}
+}
+
+@media screen and (min-width: 600px) {
+	head { font-family:"M";}
+	body:after{content:"M";}
+
+	/* Custom Styles for this breakpoint */
+	body{background:#194759;}	
+}
+
+@media screen and (min-width: 960px) {	
+	head { font-family:"L";}
+	body:after{content:"L";}
+
+	/* Custom Styles for this breakpoint */
+	body{background:#0F2B4A;}
+}

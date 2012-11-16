@@ -1,10 +1,32 @@
-Active-Media-Query
-==================
+# Active-Media-Query
 
-A cross-browser solution to determining the active media query
+A cross-browser solution for determining the active media query
 
-#How To:
+[Read more about this technique here](http://goo.gl/ggnlJ)
 
-1. Add an :after pseudo element to the body tag with a content value you wish to use for the name of your breakpoint
-2. Add a font-family property to the head tag with the same value you used for :after pseudo element
-3. Set breakpoint variables
+## How To
+
+**In your CSS file**
+
+1. Add a font-family property to the head element with a value you wish to use for the name of your breakpoint
+2. Add an :after pseudo element with a content value the same as your font-family property to the body element
+3. Repeat steps 1 and 2 for each media queries you want to sync with JavaScript. 
+
+Remember, "The absence of support for @media queries is in fact the first @media query." - [Bryan Rieger](http://www.slideshare.net/bryanrieger/rethinking-the-mobile-web-by-yiibu)
+
+**In the getActiveMQ function**
+
+4. Set up conditions for your breakpoint variables from you CSS file
+5. Add the JavaScript you want executed in sync with your media queries inside the conditions you created
+
+
+## Demo
+
+[View Demo](http://brettjankord.com/projects/active-media-query/) - with respond.js
+
+[View Demo](http://brettjankord.com/projects/active-media-query/amq-without-respond.html) - without respond.js
+
+
+## Credit 
+
+[Jeremy Keith](https://github.com/adactio), [Chris Coyier](https://github.com/chriscoyier), [Emil Björklund](https://github.com/emilbjorklund)
