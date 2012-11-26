@@ -22,9 +22,9 @@ Remember, "The absence of support for @media queries is in fact the first @media
 
 ## Demo
 
-[View Demo](http://brettjankord.com/projects/active-media-query/) - with respond.js
+[View Demo](http://brettjankord.com/projects/media-query-sync/) - with respond.js
 
-[View Demo](http://brettjankord.com/projects/active-media-query/amq-without-respond.html) - without respond.js
+[View Demo](http://brettjankord.com/projects/media-query-sync/index-without-respondjs.html) - without respond.js
 
 
 ## Thanks
