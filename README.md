@@ -14,7 +14,7 @@ A cross-browser solution for syncing Javascript functionality with CSS media que
 
 Remember, "The absence of support for @media queries is in fact the first @media query." - [Bryan Rieger](http://www.slideshare.net/bryanrieger/rethinking-the-mobile-web-by-yiibu)
 
-**In the getActiveMQ function**
+**In the mqSync function**
 
 4. Set up conditions for your breakpoint variables from you CSS file
 5. Add the JavaScript you want executed in sync with your media queries inside the conditions you created
