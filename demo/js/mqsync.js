@@ -13,8 +13,8 @@ var event = {
 // Set default
 var currentMQ = "unknown";
 
-// Check CSS value to determine active media query
-var getActiveMQ = function(){
+// Checks CSS value in active media query and syncs Javascript functionality
+var mqSync = function(){
 
 	// Fix for Opera issue when using font-family to store value
 	if (window.opera){
@@ -53,33 +53,33 @@ var getActiveMQ = function(){
 	if (activeMQ != currentMQ) {
 		if (activeMQ == 'XS') {
 			 currentMQ = activeMQ;
-			 // Code you want to run when XS breakpoint is active
+			 // Add code you want to sync with this breakpoint
 			 document.getElementById('msg').innerHTML = ('Active media query: <br><strong>' + currentMQ + '</strong>');
 			 console.log(currentMQ);
 		}
 		if (activeMQ == 'S') {
 			 currentMQ = activeMQ;
-			 // Code you want to run when S breakpoint is active
+			 // Add code you want to sync with this breakpoint
 			 document.getElementById('msg').innerHTML = ('Active media query: <br><strong>' + currentMQ + '</strong>');
 			 console.log(currentMQ);
 		}
 		if (activeMQ == 'M') {
 			 currentMQ = activeMQ;
-			 // Code you want to run when M breakpoint is active
+			 // Add code you want to sync with this breakpoint
 			 document.getElementById('msg').innerHTML = ('Active media query: <br><strong>' + currentMQ + '</strong>');
 			 console.log(currentMQ);
 		}
 		if (activeMQ == 'L') {
 			currentMQ = activeMQ;
-			// Code you want to run when L breakpoint is active
+			// Add code you want to sync with this breakpoint
 			document.getElementById('msg').innerHTML = ('Active media query: <br><strong>' + currentMQ + '</strong>');
 			console.log(currentMQ);
 		}
 	}
 	
-}; // End getActiveMQ
+}; // End mqSync
 
 // Run when DOM is ready
-getActiveMQ();
+mqSync();
 // Run on resize
-event.add(window, "resize", getActiveMQ);
+event.add(window, "resize", mqSync);
