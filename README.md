@@ -1,6 +1,6 @@
-# Active-Media-Query
+# Media-Query-Sync
 
-A cross-browser solution for determining the active media query
+A cross-browser solution for syncing Javascript functionality with CSS media queries
 
 [Read more about this technique here](http://goo.gl/ggnlJ)
 
@@ -27,6 +27,6 @@ Remember, "The absence of support for @media queries is in fact the first @media
 [View Demo](http://brettjankord.com/projects/active-media-query/amq-without-respond.html) - without respond.js
 
 
-## Credit 
+## Thanks
 
 [Jeremy Keith](https://github.com/adactio), [Chris Coyier](https://github.com/chriscoyier), [Emil Björklund](https://github.com/emilbjorklund)
